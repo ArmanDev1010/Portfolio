@@ -198,3 +198,118 @@ body {
     transform: translate(-50%, -50%) rotate(15deg);
   }
 }
+
+.clipText {
+  -webkit-text-fill-color: transparent;
+  background-image: radial-gradient(
+    circle at 220% 210%,
+    rgba(255, 255, 255, 0),
+    #fff
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.mySwiperCarousel {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+  width: 100% !important;
+  overflow: visible !important;
+}
+
+.container-large {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: visible;
+}
+
+.mySwiperCarousel .swiper-wrapper {
+  cursor: grab;
+  flex-flow: row;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  display: flex;
+  overflow: visible !important;
+}
+
+.mySwiperCarousel .swiper-slide {
+  width: 45vw !important;
+  aspect-ratio: 604/480;
+  border: 1.5px solid rgba(0, 255, 239, 0.08);
+  border-radius: 1rem;
+  flex-direction: row;
+  flex: none;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 2rem;
+  transition: border 0.3s, box-shadow 0.3s;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.mySwiperCarousel .swiper-slide img {
+  transition: transform 0.3s ease;
+  transform: scale(0.9);
+}
+
+.mySwiperCarousel .swiper-slide-active img {
+  transform: scale(1) !important;
+}
+
+.mySwiperCarousel .swiper-slide-active {
+  -webkit-box-shadow: 0px 0px 120px 0px rgba(0, 97, 89, 0.4);
+  -moz-box-shadow: 0px 0px 120px 0px rgba(0, 97, 89, 0.4);
+  box-shadow: 0px 0px 120px 0px rgba(0, 97, 89, 0.4);
+  border-color: rgba(0, 255, 239, 0.4);
+}
+
+.conversion_card-content-wrapper {
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.86) 25%);
+}
+
+.mySwiperCarousel .swiper-slide:hover {
+  border-color: rgba(0, 255, 239, 0.2);
+}
+.mySwiperCarousel .swiper-slide-active:hover {
+  border-color: rgba(0, 255, 239, 0.4);
+}
+
+@media screen and (max-width: 1024px) {
+  .mySwiperCarousel .swiper-slide {
+    width: 70% !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .prev-arrow svg {
+    width: 32px !important;
+    height: 32px !important;
+  }
+  .next-arrow svg {
+    width: 32px !important;
+    height: 32px !important;
+  }
+  .mySwiperCarousel .swiper-slide {
+    margin-right: 1rem !important;
+  }
+  .mySwiperCarousel .swiper-slide svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .mySwiperCarousel .swiper-slide {
+    width: 90% !important;
+  }
+}

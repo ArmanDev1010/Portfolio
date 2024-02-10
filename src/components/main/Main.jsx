@@ -42,13 +42,13 @@ const Main = () => {
         </a>
       </div>
       <motion.div
-        ref={ref}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
         variants={{
           visible: { opacity: 1, x: 0 },
           hidden: { opacity: 0, x: -100 },
         }}
-        initial="hidden"
-        animate={control}
         transition={{
           ease: "linear",
           x: { duration: 0.6, delay: 0.5 },
@@ -100,7 +100,7 @@ const Main = () => {
             </g>
           </g>
         </svg>{" "}
-        <div className="digital-ball big:!right-[1.6em] big:!top-[1.6em] max-stablet:!top-1/2 max-stablet:!transform max-stablet:!-translate-y-1/2 max-stablet:!right-[9.9em] max-small:!right-0">
+        <div className="digital-ball big:!right-[1.65em] big:!top-[1.6em] max-stablet:!top-1/2 max-stablet:!transform max-stablet:!-translate-y-1/2 max-stablet:!right-[9.9em] max-small:!right-0">
           <div className="overlay"></div>
           <div className="globe big:!w-[4.5em] big:!h-[4.5em]">
             <div className="globe-wrap">
@@ -114,13 +114,13 @@ const Main = () => {
         </div>
       </motion.div>
       <motion.div
-        ref={ref}
+        whileInView="visible"
+        viewport={{ once: true }}
         variants={{
           visible: { opacity: 1, x: 0 },
           hidden: { opacity: 0, x: 100 },
         }}
         initial="hidden"
-        animate={control}
         transition={{
           ease: "linear",
           x: { duration: 0.6, delay: 0.5 },
@@ -175,13 +175,13 @@ const Main = () => {
         </div>
       </motion.div>
       <motion.div
-        ref={ref}
+        whileInView="visible"
+        viewport={{ once: true }}
         variants={{
           visible: { opacity: 1, y: 0 },
           hidden: { opacity: 0, y: 100 },
         }}
         initial="hidden"
-        animate={control}
         transition={{
           ease: "linear",
           y: { duration: 0.6, delay: 1 },
