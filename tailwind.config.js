@@ -14,6 +14,7 @@ export default {
     screens: {
       big: "1600px",
       desktop: "1350px",
+      sdesktop: "1250px",
       bmedium: "1080px",
       medium: "1024px",
       btablet: "901px",

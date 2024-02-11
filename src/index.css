@@ -42,6 +42,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background: #030604;
 }
 
 .hanger {
@@ -284,6 +285,26 @@ body {
 }
 .mySwiperCarousel .swiper-slide-active:hover {
   border-color: rgba(0, 255, 239, 0.4);
+}
+
+.splen {
+  transition: box-shadow 0.2s, border 0.2s;
+  border-top-left-radius: 1.5vw;
+  border-bottom-left-radius: 1.5vw;
+}
+
+.splen:hover {
+  border-color: rgba(0, 255, 239, 0.5);
+  box-shadow: 0 0 40px rgba(0, 255, 239, 0.3);
+}
+
+.client-gallery_image-wrapper-splider {
+  transition: box-shadow 0.2s, border 0.2s;
+}
+
+.client-gallery_image-wrapper-splider:hover {
+  border-color: rgba(0, 255, 239, 0.5);
+  box-shadow: 0 0 40px rgba(0, 255, 239, 0.3);
 }
 
 @media screen and (max-width: 1024px) {

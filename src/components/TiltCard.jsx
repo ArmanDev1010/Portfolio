@@ -1,7 +1,9 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-const TiltCard = () => {
+import { shadowkyacademy, lilit } from "../assets/index";
+
+const TiltCard = (props) => {
   const ref = useRef(null);
   const ROTATION_RANGE = 22.5;
   const HALF_ROTATION_RANGE = 22.5 / 2;
@@ -32,7 +34,29 @@ const TiltCard = () => {
     setRotateY(0);
   };
 
-  return (
+  return props.clients ? (
+    <motion.div
+      ref={ref}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      style={{
+        transformStyle: "preserve-3d",
+      }}
+      animate={{
+        rotateX,
+        rotateY,
+      }}
+      className="relative w-full h-full max-btablet:!w-full max-btablet:!h-[400px] max-small:!h-[300px] max-smal:!h-[250px]"
+    >
+      <div
+        style={{
+          transform: "translateZ(70px)",
+          backgroundImage: `url(${lilit})`,
+        }}
+        className="splen relative w-full h-full bg-top bg-cover bg-no-repeat max-btablet:!rounded-none max-btablet:!rounded-b-xl max-small:bg-top"
+      ></div>
+    </motion.div>
+  ) : (
     <motion.div
       ref={ref}
       onMouseMove={handleMouseMove}

@@ -8,5 +8,20 @@
       "conversion": "Conversion-optimized layout",
       "copy": "Captivating copy"
     }
+  },
+  "clients": {
+    "title": "Trusted by Clients",
+    "review": "These are my marketing blackbelts helping me in my conquest against the machine, so I thought I'd give them a quick shoutout. They've done a lot of great things for me while I'm all the way in Croatia, and we're still getting the world conquered so thanks guys.",
+    "person": "Lilit Vatoyan",
+    "role": "Founder KY Academy"
+  },
+  "problems": {
+    "problem": "THE PROBLEM",
+    "missing": "You’re missing out on a great first impression",
+    "website": {
+      "one": "Your website is the first thing that your customer sees.",
+      "two": "Ask yourself, are you creating the greatest possible first impression to increase sales?",
+      "three": "If the answer is no, your brand is likely suffering from large opportunity cost."
+    }
   }
 }
