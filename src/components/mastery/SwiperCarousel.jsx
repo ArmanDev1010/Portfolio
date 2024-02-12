@@ -23,19 +23,19 @@ const SwiperCarousel = ({ sliderRef }) => {
           <Carousel purpose="design" />
         </SwiperSlide>
         <SwiperSlide>
-          <Carousel purpose="conversion" />
-        </SwiperSlide>
-        <SwiperSlide>
           <Carousel purpose="copy" />
+        </SwiperSlide>{" "}
+        <SwiperSlide>
+          <Carousel purpose="conversion" />
         </SwiperSlide>
         <SwiperSlide>
           <Carousel purpose="design" />
         </SwiperSlide>
         <SwiperSlide>
-          <Carousel purpose="conversion" />
-        </SwiperSlide>
-        <SwiperSlide>
           <Carousel purpose="copy" />
+        </SwiperSlide>{" "}
+        <SwiperSlide>
+          <Carousel purpose="conversion" />
         </SwiperSlide>
       </Swiper>
     </div>

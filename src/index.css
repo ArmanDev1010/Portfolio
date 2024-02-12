@@ -307,6 +307,17 @@ body {
   box-shadow: 0 0 40px rgba(0, 255, 239, 0.3);
 }
 
+.scale_banner-text {
+  background: radial-gradient(
+    104.17% 104.17% at 50% 13.54%,
+    #fff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media screen and (max-width: 1024px) {
   .mySwiperCarousel .swiper-slide {
     width: 70% !important;

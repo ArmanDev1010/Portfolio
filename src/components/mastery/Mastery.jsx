@@ -34,7 +34,7 @@ const Mastery = () => {
   }, [inView]);
 
   return (
-    <div className="bg-primary py-24 max-tablet:py-16">
+    <div className="bg-primary py-24 max-tablet:py-20">
       <div className="relative w-full">
         <div className="px-[5%]">
           <div className="relative mb-12 pt-0 max-w-[1280px] w-full !mx-auto flex justify-between gap-10 max-medium:flex-col max-medium:justify-start max-tablet:gap-6 max-tablet:mb-8">

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-import { shadowkyacademy, lilit } from "../assets/index";
+import { lilit } from "../assets/index";
 
 const TiltCard = (props) => {
   const ref = useRef(null);

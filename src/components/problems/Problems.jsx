@@ -4,6 +4,8 @@ import { useTranslation } from "react-i18next";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+import { problem } from "../../assets/index";
+
 const Problems = () => {
   const { t } = useTranslation();
 
@@ -21,11 +23,11 @@ const Problems = () => {
   }, [inView]);
 
   return (
-    <div className="bg-primary py-24 max-tablet:py-16">
+    <div className="bg-primary">
       <div className="relative w-full">
         <div className="px-[5%]">
-          <div className="relative mb-12 pt-0 max-w-[1280px] w-full !mx-auto flex justify-between gap-10 max-medium:flex-col max-medium:justify-start max-tablet:gap-6 max-tablet:mb-8">
-            <div className="flex-[0.5]">
+          <div className="relative mb-12 pt-0 max-w-[1280px] w-full !mx-auto flex justify-between gap-10 max-medium:flex-col max-medium:justify-start max-tablet:gap-10 max-tablet:mb-8">
+            <div className="flex-[0.5] max-medium:w-full">
               <motion.p
                 ref={ref}
                 variants={{
@@ -52,19 +54,19 @@ const Problems = () => {
                   visible: { opacity: 1, x: 0 },
                   hidden: { opacity: 0, x: -100 },
                 }}
-                className="clipText text-[80px] tracking-[-0.2rem] font-[600] text-lightb leading-[1.1] max-w-[800px] max-tablet:text-[3rem] max-small:text-[2.5rem]"
+                className="clipText text-[80px] tracking-[-0.2rem] font-[600] text-lightb leading-[1.1] max-w-[800px] max-tablet:text-[3rem] max-small:text-[2.5rem] max-medium:max-w-full"
               >
                 {t("problems.missing")}
               </motion.h2>
             </div>
-            <div className="self-end flex flex-col gap-8 flex-[0.5] max-w-[31.125rem] max-medium:self">
-              <p className="text-[#a0a0ab] -tracking-[0.0275rem] text-[1.375rem]">
+            <div className="self-end flex flex-col gap-8 flex-[0.5] max-w-[31.125rem] max-medium:self-start max-medium:gap-6">
+              <p className="text-[#a0a0ab] -tracking-[0.0275rem] text-[1.375rem] max-medium:text-[18px]">
                 {t("problems.website.one")}
               </p>
-              <p className="text-[#a0a0ab] -tracking-[0.0275rem] text-[1.375rem]">
+              <p className="text-[#a0a0ab] -tracking-[0.0275rem] text-[1.375rem] max-medium:text-[18px]">
                 {t("problems.website.two")}
               </p>
-              <p className="text-[#a0a0ab] -tracking-[0.0275rem] text-[1.375rem]">
+              <p className="text-[#a0a0ab] -tracking-[0.0275rem] text-[1.375rem] max-medium:text-[18px]">
                 {t("problems.website.three")}
               </p>
             </div>
@@ -81,7 +83,14 @@ const Problems = () => {
             ></motion.div>
           </div>
         </div>
-        <div className="max-w-[1280px] w-full !mx-auto overflow-visible relative"></div>
+        <div className="max-w-[1280px] w-full !mx-auto overflow-visible relative px-[5%]">
+          <img src={problem} alt="" />
+        </div>
+        <div className="w-full bg-[rgb(28_28_32)] py-[2.5rem]">
+          <div className="scale_banner-text text-center text-[2rem] italic font-[600] leading-[1.2] tracking-[0.3rem] uppercase max-tablet:text-[1.2rem] px-[5%]">
+            {t("problems.killer")}
+          </div>
+        </div>
       </div>
     </div>
   );

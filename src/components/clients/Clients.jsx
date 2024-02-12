@@ -9,7 +9,7 @@ import { kyacademy } from "../../assets";
 const Clients = () => {
   const { t } = useTranslation();
   return (
-    <div className="pb-24">
+    <div className="pb-28 max-tablet:pb-24">
       <div className="relative px-[5%]">
         <div className="max-w-[48rem] w-full !mx-auto relative overflow-visible mb-16 max-tablet:mb-10 max-phone:mb-8">
           <motion.h2
