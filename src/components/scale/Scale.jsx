@@ -1,15 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import ScaleList from "./ScaleList";
 
-import { after, before, problem } from "../../assets/index";
-
-const Problems = () => {
+const Scale = () => {
   const { t } = useTranslation();
-
-  const [percentage, isPercentage] = useState("60%");
 
   // animation
   const control = useAnimation();
@@ -23,19 +20,8 @@ const Problems = () => {
       control.start("hidden");
     }
   }, [inView]);
-
-  const onMouseMove = (e) => {
-    // Calculate the center coordinates of the circle
-    let centerX =
-      (Math.round(e.clientX - e.target.getBoundingClientRect().left) /
-        e.target.offsetWidth) *
-      100;
-
-    isPercentage(100 - centerX.toFixed(2));
-  };
-
   return (
-    <div className="bg-primary">
+    <div className="bg-primary py-[7rem] max-tablet:py-[6rem] max-small:!pt-[5rem]">
       <div className="relative w-full">
         <div className="px-[5%]">
           <div className="relative pt-0 max-w-[1280px] w-full !mx-auto flex justify-between gap-10 max-medium:flex-col max-medium:justify-start max-tablet:gap-10">
@@ -51,7 +37,7 @@ const Problems = () => {
                 transition={{ ease: "easeIn", x: { duration: 0.4 } }}
                 className="uppercase mb-3 font-[600] tracking-[0.15rem] text-xl italic pl-3 border-l border-l-[4px] border-secondary text-secondary max-tablet:text-base max-tablet:border-l-[3px]"
               >
-                {t("problems.problem")}
+                {t("scale.why")}
               </motion.p>
               <motion.h2
                 initial="hidden"
@@ -68,18 +54,12 @@ const Problems = () => {
                 }}
                 className="clipText text-[80px] tracking-[-0.2rem] font-[600] text-lightb leading-[1.1] max-w-[800px] max-tablet:text-[3rem] max-small:text-[2.5rem] max-medium:max-w-full"
               >
-                {t("problems.missing")}
+                {t("scale.title")}
               </motion.h2>
             </div>
             <div className="self-end flex flex-col gap-8 flex-[0.5] max-w-[31.125rem] max-medium:self-start max-medium:gap-6">
               <p className="text-[#a0a0ab] -tracking-[0.0275rem] text-[1.375rem] max-medium:text-[18px]">
-                {t("problems.website.one")}
-              </p>
-              <p className="text-[#a0a0ab] -tracking-[0.0275rem] text-[1.375rem] max-medium:text-[18px]">
-                {t("problems.website.two")}
-              </p>
-              <p className="text-[#a0a0ab] -tracking-[0.0275rem] text-[1.375rem] max-medium:text-[18px]">
-                {t("problems.website.three")}
+                {t("scale.ready")}
               </p>
             </div>
             <motion.div
@@ -95,27 +75,24 @@ const Problems = () => {
             ></motion.div>
           </div>
         </div>
-        <div className="px-[5%] pt-[4rem]">
-          <div className="max-w-[1280px] w-full !mx-auto overflow-visible relative max-tablet:pt-8">
-            <div
-              className="splitter_component is-radius"
-              onMouseMove={(ev) => onMouseMove(ev)}
-            >
-              <div className="splitter_before">
-                <img src={before} alt="" className="splitter_image" />
-              </div>
-              <div
-                className="spliter_after"
-                style={{ width: `${percentage}%` }}
-              >
-                <img src={after} alt="" className="splitter_image is-after" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="w-full bg-[rgb(28_28_32)] py-[2.5rem]">
-          <div className="scale_banner-text text-center text-[2rem] italic font-[600] leading-[1.2] tracking-[0.3rem] uppercase max-tablet:text-[1.2rem] px-[5%]">
-            {t("problems.killer")}
+        <div className="px-[5%] mt-12 relative">
+          <div className="max-w-[1280px] relative pt-0 max-w-[1280px] w-full !mx-auto">
+            <ul className="">
+              {[
+                "features",
+                "eye",
+                "world",
+                "sales",
+                "responsive",
+                "lightning",
+                "smooth",
+                "unlimited",
+                "swift",
+              ].map((text, key) => (
+                <ScaleList key={key} text={text} />
+              ))}
+            </ul>
+            <div className="glow-behind-faq"></div>
           </div>
         </div>
       </div>
@@ -123,4 +100,4 @@ const Problems = () => {
   );
 };
 
-export default Problems;
+export default Scale;

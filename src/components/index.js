@@ -6,4 +6,6 @@ import Clients from "./clients/Clients";
 
 import Problems from "./problems/Problems";
 
-export { Main, Mastery, Clients, Problems };
+import Scale from "./scale/Scale";
+
+export { Main, Mastery, Clients, Problems, Scale };

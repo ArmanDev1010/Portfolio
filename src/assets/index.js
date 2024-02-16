@@ -5,5 +5,7 @@ import lilit from "./clients/lilit.png";
 import kyacademy from "./clients/kyacademy.png";
 import shadowkyacademy from "./clients/shadowkyacademy.png";
 import problem from "./problem/problem.png";
+import before from "./problem/before.png"
+import after from "./problem/after.png"
 
-export { design, conversion, copy, lilit, kyacademy, shadowkyacademy, problem };
+export { design, conversion, copy, lilit, kyacademy, shadowkyacademy, problem, after, before };

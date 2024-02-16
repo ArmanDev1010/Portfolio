@@ -5,7 +5,7 @@ import { initReactI18next } from "react-i18next";
 
 import { translationAM } from "./languages";
 
-import { Main, Mastery, Clients, Problems } from "./components";
+import { Main, Mastery, Clients, Problems, Scale } from "./components";
 
 import { MyContext } from "./context/MyContext";
 
@@ -43,6 +43,7 @@ const App = () => {
           <Mastery />
           <Clients />
           <Problems />
+          <Scale />
         </MyContext.Provider>
       </div>
     </div>

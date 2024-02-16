@@ -24,5 +24,23 @@
       "three": "If the answer is no, your brand is likely suffering from large opportunity cost."
     },
     "killer": "ALL USING KILLER LANDING PAGES"
+  },
+  "scale": {
+    "why": "WHY US",
+    "title": "Everything you need to scale",
+    "ready": "Ready to start scaling? Here’s where we stand when compared to other typical agencies",
+    "us": "Us",
+    "others": "Others",
+    "list": {
+      "features": "Features",
+      "eye": "Eye-catching design",
+      "world": "World-Class Sales Copy",
+      "sales": "Sales-Optimized layout",
+      "responsive": "Responsive Development",
+      "lightning": "Lightning fast page speed",
+      "smooth": "Smooth Animations & Visuals",
+      "unlimited": "Unlimited revisions until you’re satisfied",
+      "swift": "Swift Delivery"
+    }
   }
 }
