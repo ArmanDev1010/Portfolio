@@ -9,7 +9,7 @@ const Frequent = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-[#131316] py-28 max-tablet:pb-24 max-small:!pb-[4rem] relative">
+    <div className="bg-[#131316] py-28 max-tablet:pb-24 max-small:!pb-[2rem] relative">
       <div className="relative px-[5%]">
         <div className="max-w-[48rem] w-full !mx-auto relative overflow-visible mb-16 max-tablet:mb-10 max-phone:mb-8">
           <motion.h2

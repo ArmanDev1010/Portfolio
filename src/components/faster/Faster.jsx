@@ -78,7 +78,7 @@ const Faster = () => {
         </div>
         <div className="px-[5%] pt-[4rem] pb-[2rem] max-tablet:pt-[3rem]">
           <div className="max-w-[1280px] w-full !mx-auto overflow-visible relative">
-            <div className="grid grid-cols-[1fr_1fr_1fr] gap-x-[2rem] max-medium:grid-cols-[1fr] max-medium:gap-y-[2rem] max-small:gap-y-[1.5rem]">
+            <div className="grid grid-cols-[1fr_1fr_1fr] gap-x-[2rem] max-sdesktop:grid-cols-[1fr] max-sdesktop:gap-y-[2rem] max-small:gap-y-[1.5rem]">
               <Opportunity text="lower" />
               <Opportunity text="increase" />
               <Opportunity text="build" />

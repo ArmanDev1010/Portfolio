@@ -38,7 +38,7 @@ const Problems = () => {
     <div className="bg-primary">
       <div className="relative w-full">
         <div className="px-[5%]">
-          <div className="relative pt-0 max-w-[1280px] w-full !mx-auto flex justify-between gap-10 max-medium:flex-col max-medium:justify-start max-tablet:gap-10">
+          <div className="relative pt-0 max-w-[1280px] w-full !mx-auto flex justify-between gap-10 max-sdesktop:flex-col max-sdesktop:justify-start max-tablet:gap-10">
             <div className="flex-[0.5] max-medium:w-full">
               <motion.p
                 ref={ref}
@@ -71,7 +71,7 @@ const Problems = () => {
                 {t("problems.missing")}
               </motion.h2>
             </div>
-            <div className="self-end flex flex-col gap-8 flex-[0.5] max-w-[31.125rem] max-medium:self-start max-medium:gap-6">
+            <div className="self-end flex flex-col gap-8 flex-[0.5] max-w-[31.125rem] max-sdesktop:self-start max-sdesktop:gap-6">
               <p className="text-[#a0a0ab] -tracking-[0.0275rem] text-[1.375rem] max-medium:text-[18px]">
                 {t("problems.website.one")}
               </p>

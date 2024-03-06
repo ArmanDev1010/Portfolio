@@ -21,7 +21,7 @@ const Scale = () => {
     }
   }, [inView]);
   return (
-    <div className="bg-primary !py-24 max-tablet:!py-20">
+    <div className="bg-primary !py-24 max-tablet:!py-[4rem]">
       <div className="relative w-full">
         <div className="px-[5%]">
           <div className="relative pt-0 max-w-[1280px] w-full !mx-auto flex justify-between gap-10 max-medium:flex-col max-medium:justify-start max-tablet:gap-10">
@@ -70,14 +70,14 @@ const Scale = () => {
             ></motion.div>
           </div>
         </div>
-        <div className="px-[5%] mt-12 relative max-smal:px-[0%]">
+        <div className="px-[5%] mt-12 relative max-small:px-[0%]">
           <div className="max-w-[1280px] relative pt-0 max-w-[1280px] w-full !mx-auto">
             <ul className="">
               {["features"].map((text, key) => (
                 <ScaleList key={key} text={text} />
               ))}
             </ul>
-            <ul className="max-smal:px-[2%]">
+            <ul className="max-small:px-[2%]">
               {[
                 "eye",
                 "world",
