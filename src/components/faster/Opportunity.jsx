@@ -23,10 +23,10 @@ const Opportunity = (props) => {
         }
         src={`${
           props.text == "lower"
-            ? "./src/assets/animated-svgs/wired-outline-950-attract-customers.json"
+            ? "./animated-svgs/wired-outline-950-attract-customers.json"
             : props.text == "increase"
-            ? "./src/assets/animated-svgs/wired-outline-1445-greek-helmet.json"
-            : "./src/assets/animated-svgs/wired-outline-981-consultation.json"
+            ? "./animated-svgs/wired-outline-1445-greek-helmet.json"
+            : "./animated-svgs/wired-outline-981-consultation.json"
         }`}
       ></lord-icon>
       <p className="text-[#e2e2e5] tracking-[-0.035rem] text-[1.75rem] leading-[1.2] max-small:text-[1.3rem]">
