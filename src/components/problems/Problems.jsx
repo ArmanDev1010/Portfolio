@@ -113,11 +113,6 @@ const Problems = () => {
             </div>
           </div>
         </div>
-        <div className="w-full bg-[rgb(28_28_32)] py-[2.5rem]">
-          <div className="scale_banner-text text-center text-[2rem] italic font-[600] leading-[1.2] tracking-[0.3rem] uppercase max-tablet:text-[1.2rem] px-[5%]">
-            {t("problems.killer")}
-          </div>
-        </div>
       </div>
     </div>
   );

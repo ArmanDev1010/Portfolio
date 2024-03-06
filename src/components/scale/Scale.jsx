@@ -21,11 +21,11 @@ const Scale = () => {
     }
   }, [inView]);
   return (
-    <div className="bg-primary py-[7rem] max-tablet:py-[6rem] max-small:!pt-[5rem]">
+    <div className="bg-primary !py-24 max-tablet:!py-20">
       <div className="relative w-full">
         <div className="px-[5%]">
           <div className="relative pt-0 max-w-[1280px] w-full !mx-auto flex justify-between gap-10 max-medium:flex-col max-medium:justify-start max-tablet:gap-10">
-            <div className="flex-[0.5] max-medium:w-full">
+            <div className="max-medium:w-full">
               <motion.p
                 ref={ref}
                 variants={{
@@ -52,15 +52,10 @@ const Scale = () => {
                   visible: { opacity: 1, x: 0 },
                   hidden: { opacity: 0, x: -100 },
                 }}
-                className="clipText text-[80px] tracking-[-0.2rem] font-[600] text-lightb leading-[1.1] max-w-[800px] max-tablet:text-[3rem] max-small:text-[2.5rem] max-medium:max-w-full"
+                className="clipText text-[80px] tracking-[-0.2rem] font-[600] text-lightb leading-[1.1] max-w-[900px] max-tablet:text-[3rem] max-small:text-[2.5rem] max-medium:max-w-full"
               >
                 {t("scale.title")}
               </motion.h2>
-            </div>
-            <div className="self-end flex flex-col gap-8 flex-[0.5] max-w-[31.125rem] max-medium:self-start max-medium:gap-6">
-              <p className="text-[#a0a0ab] -tracking-[0.0275rem] text-[1.375rem] max-medium:text-[18px]">
-                {t("scale.ready")}
-              </p>
             </div>
             <motion.div
               ref={ref}
@@ -75,11 +70,15 @@ const Scale = () => {
             ></motion.div>
           </div>
         </div>
-        <div className="px-[5%] mt-12 relative">
+        <div className="px-[5%] mt-12 relative max-smal:px-[0%]">
           <div className="max-w-[1280px] relative pt-0 max-w-[1280px] w-full !mx-auto">
             <ul className="">
+              {["features"].map((text, key) => (
+                <ScaleList key={key} text={text} />
+              ))}
+            </ul>
+            <ul className="max-smal:px-[2%]">
               {[
-                "features",
                 "eye",
                 "world",
                 "sales",

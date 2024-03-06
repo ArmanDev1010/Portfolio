@@ -3,29 +3,29 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Montserratarm";
+  font-family: "Inter";
   font-weight: normal;
-  src: url("./fonts/Montserratarm-Regular.otf") format("otf");
+  src: url("./fonts/Inter-Regular.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Montserratarm";
+  font-family: "Inter";
   font-weight: bold;
-  src: url("./fonts/Montserratarm-Bold.otf") format("otf");
+  src: url("./fonts/Inter-Bold.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Montserratarm";
+  font-family: "Inter";
   font-weight: bolder;
-  src: url("./fonts/Montserratarm-ExtraBold.otf") format("otf");
+  src: url("./fonts/Inter-ExtraBold.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Montserratarm";
+  font-family: "Inter";
   font-weight: semibold;
-  src: url("./fonts/Montserratarm-SemiBold.otf") format("otf");
+  src: url("./fonts/Inter-SemiBold.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Montserratarm";
+  font-family: "Inter";
   font-weight: lighter;
-  src: url("./fonts/Montserratarm-Light.otf") format("otf");
+  src: url("./fonts/Inter-Thin.ttf") format("otf");
 }
 
 :root {
@@ -156,6 +156,19 @@ body {
   height: 0.15em;
   background: white;
   font-size: 0.75em;
+}
+
+.cta_bg {
+  width: 170%;
+  max-width: none;
+  filter: blur(10px);
+  pointer-events: none;
+  position: absolute;
+  top: 53%;
+  bottom: 0%;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes circle1 {
@@ -351,12 +364,47 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.glow-behind-faq.is-home {
+  opacity: 0.72 !important;
+  background-image: linear-gradient(
+    105deg,
+    rgba(0, 255, 239, 0.3),
+    rgba(0, 255, 239, 0.35) 36%,
+    rgba(0, 255, 239, 0.25)
+  ) !important;
+}
+
+.faq_fade {
+  width: 100%;
+  height: 30%;
+  pointer-events: none;
+  background-image: linear-gradient(
+    #030604,
+    rgba(3, 6, 4, 0.39) 25%,
+    rgba(3, 6, 4, 0)
+  );
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+}
+
+.faq_fade.is-bottom {
+  background-image: linear-gradient(rgba(3, 6, 4, 0), #030604);
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
 .splitter_component.is-radius {
   width: 100%;
   height: auto;
   aspect-ratio: 1240/867;
   border: 1px solid #1a1a1e;
   border-radius: 1rem 1rem 0 0;
+  border-bottom: none !important;
 }
 
 .splitter_component {
@@ -407,6 +455,96 @@ body {
   display: block;
 }
 
+.scale_img-wrapper {
+  max-width: 89.25rem;
+  aspect-ratio: 1428/548;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.scale_img-wrapper img {
+  width: 100%;
+  max-width: none;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-n:hover {
+  filter: saturate(180%);
+  color: #172c2b;
+  border-color: #16948c;
+  box-shadow: 0 0 40px rgba(0, 255, 239, 0.6);
+}
+
+.answer {
+  margin-left: 8px;
+  margin-right: 8px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+  text-align: left;
+}
+
+.rotateArrow {
+  transform: rotateZ(180deg);
+  transition: transform 0.4s ease;
+}
+
+.rotateBack {
+  transform: rotateZ(0deg);
+  transition: transform 0.4s ease;
+}
+
+.price_tab-link_a {
+  border-color: #00ffef;
+  color: #00ffef;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: radial-gradient(circle at 50% 110%, rgba(0, 255, 239, .3), rgba(0, 255, 239, 0));
+}
+
+.price_tab-link_a:hover {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.price_tab-link_b {
+  border-color: #00ffef;
+  color: #00ffef;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: radial-gradient(circle at 50% 110%, rgba(0, 255, 239, .3), rgba(0, 255, 239, 0));
+}
+
+.price_tab-link_b:hover {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.price_opacity {
+  animation: opacity_price 0.3s ease-in-out;
+}
+
+@keyframes opacity_price {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.price_opacityy {
+  animation: opacity_pricee 0.3s ease-in-out;
+}
+
+@keyframes opacity_pricee {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .mySwiperCarousel .swiper-slide {
     width: 70% !important;
@@ -436,5 +574,8 @@ body {
 @media screen and (max-width: 550px) {
   .mySwiperCarousel .swiper-slide {
     width: 90% !important;
+  }
+  .scale_img-wrapper img {
+    height: 150% !important;
   }
 }

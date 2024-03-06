@@ -1,46 +1,91 @@
 {
   "weather_forcast_for": "Սենդինգ ա մեսսագե",
   "mastery": {
-    "increasing": "INCREASING ROAS",
-    "mastery": "A Carousel of Conversions Mastery",
+    "increasing": "ROAS ՑՈՒՑԱՆԻՇԻ ԱՃ",
+    "mastery": "Փոխակերպումների վարպետության կարուսել",
     "purpose": {
-      "design": "Stunning design",
-      "conversion": "Conversion-optimized layout",
-      "copy": "Captivating copy"
+      "design": "Տպավորիչ դիզայն",
+      "conversion": "Շահավետ նախագիծ",
+      "copy": "Գրավիչ պատճեն"
     }
   },
   "clients": {
-    "title": "Trusted by Clients",
-    "review": "These are my marketing blackbelts helping me in my conquest against the machine, so I thought I'd give them a quick shoutout. They've done a lot of great things for me while I'm all the way in Croatia, and we're still getting the world conquered so thanks guys.",
-    "person": "Lilit Vatoyan",
-    "role": "Founder KY Academy"
+    "title": "Հաճախորդների կողմից վստահված",
+    "review": "Մանրազնին ուշադրություն դարձնելով դիզայնին ու ամեն մանրուքին, Արմանը ստեղծեց փայլուն և հարմարավետ կայք, որը հիանալիորեն արտահայտում է KY ACADEMY-ի էությունը",
+    "person": "Լիլիթ Վաթոյան",
+    "role": "KY Academy Հիմնադիր"
   },
   "problems": {
-    "problem": "THE PROBLEM",
-    "missing": "You’re missing out on a great first impression",
+    "problem": "ԽՆԴԻՐԸ",
+    "missing": "Դուք կորցնում եք առաջին հիանալի տպավորությունը",
     "website": {
-      "one": "Your website is the first thing that your customer sees.",
-      "two": "Ask yourself, are you creating the greatest possible first impression to increase sales?",
-      "three": "If the answer is no, your brand is likely suffering from large opportunity cost."
+      "one": "Կայքը առաջինն է, որ տեսնում է ձեր հաճախորդը:",
+      "two": "Սրդյո՞ք ստեղծում եք հնարավոր առավելագույն առաջին տպավորությունը վաճառքը մեծացնելու համար:",
+      "three": "Եթե ոչ, ապա ձեր ապրանքանիշը հնարավոր է զրկվի մեծ հնարավորություններից"
     },
     "killer": "ALL USING KILLER LANDING PAGES"
   },
   "scale": {
-    "why": "WHY US",
-    "title": "Everything you need to scale",
-    "ready": "Ready to start scaling? Here’s where we stand when compared to other typical agencies",
-    "us": "Us",
-    "others": "Others",
+    "why": "Ինչու՞ մենք",
+    "title": "Այն ամենը, ինչ անհրաժեշտ է զարգացման համար",
+    "us": "Մենք",
+    "others": "Ուրիշները",
     "list": {
-      "features": "Features",
-      "eye": "Eye-catching design",
-      "world": "World-Class Sales Copy",
-      "sales": "Sales-Optimized layout",
-      "responsive": "Responsive Development",
-      "lightning": "Lightning fast page speed",
-      "smooth": "Smooth Animations & Visuals",
-      "unlimited": "Unlimited revisions until you’re satisfied",
-      "swift": "Swift Delivery"
+      "features": "Հատկանիշներ",
+      "eye": "Տպավորիչ դիզայն",
+      "world": "Գերազանց վաճառքի պատճեն",
+      "sales": "Շահավետ նախագծի մշակում",
+      "responsive": "Responsive կայքի ստեղծում",
+      "lightning": "Կայծակնային արագություն",
+      "smooth": "Գրավիչ անիմացիաներ և վիզուալներ",
+      "unlimited": "Անսահմանափակ վերանայում մինչև բոլոր պահանջների բավարարումը",
+      "swift": "Բարձրակարգ սպասարկում"
+    }
+  },
+  "faster": {
+    "reach": "Հասնել նպատակին",
+    "scaling": "Դու կարող ես հասնել ավելիին",
+    "opportunity": {
+      "lower": "Հաճախորդների ձեռքբերման ավելի արդյունավետ ճանապարհ",
+      "increase": "Ավելացնել վստահությունն ու շահավետությունը",
+      "build": "Կերտել ապրանքանիշ, որը ստեղծում է հիշարժան տպավորություն"
+    }
+  },
+  "plan": {
+    "plans": "ՊԼԱՆՆԵՐ",
+    "start": "Սկսեք աշխատել մեզ հետ",
+    "month": "/Ամսական",
+    "call": "Կապ հաստատել",
+    "onetime": "Մեկ-անգամյա",
+    "monthly": "Ամսական",
+    "startup": {
+      "price": "25,900 AMD"
+    },
+    "enterprise": {
+      "price": "35,900 AMD"
+    },
+    "onestartup": {
+      "price": "150,000 AMD"
+    },
+    "oneenterprise": {
+      "price": "200,000 AMD"
+    }
+  },
+  "frequent": {
+    "title": " Հաճախակի հնչող հարցեր",
+    "faq": {
+      "limit": {
+        "title": "Արդյոք կա սահմանափակում, թե քանի անգամ կարող եմ հարցում անել ամսվա ընթացքում",
+        "paragraph": "Ոչ, դուք կարող եք ուղղել բոլոր հարցումները երբ բաժանորդագրվեք որևէ ամսական փաթեթին։ Հայտերը կկատարվեն մեկ առ մեկ (կամ երեք անգամ՝ Պրեմիում պլանում), ըստ ձեր ուզած առաջնահերթության:"
+      },
+      "fast": {
+        "title": "Որքա՞ն արագ կստանամ իմ  կայքը կամ հարցումը",
+        "paragraph": "Արագությունն օգնում է մեր հաճախորդներին հասնել ավելիին: Հաշվի առնելով դա՝ մենք աշխատում ենք հնարավորինս արագ՝ պահպանելով հնարավոր ամենաբարձր որակը: Դա մեր ապրանքանիշերից մեկն է:"
+      },
+      "work": {
+        "title": "Իսկ եթե ինձ դուր չի գալիս աշխատանքը",
+        "paragraph": "Թեև ոչ ոք մեզ երբեք չի հարցրել դա. ամեն դեպքում, մենք առաջարկում ենք անսահմանափակ վերանայումներ, քանի դեռ դուք լիովին գոհ չեք մեր աշխատանքից: Մեր նպատակն է հնարավորինս քիչ վերանայումներով ապահովել հնարավոր լավագույն արդյունքները:"
+      }
     }
   }
 }

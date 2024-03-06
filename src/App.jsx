@@ -5,7 +5,17 @@ import { initReactI18next } from "react-i18next";
 
 import { translationAM } from "./languages";
 
-import { Main, Mastery, Clients, Problems, Scale } from "./components";
+import {
+  Main,
+  Mastery,
+  Clients,
+  Problems,
+  Scale,
+  Faster,
+  Plans,
+  Frequent,
+  Footer,
+} from "./components";
 
 import { MyContext } from "./context/MyContext";
 
@@ -33,7 +43,7 @@ const App = () => {
 
   return (
     <div className="">
-      <div className="font-montserratarm overflow-hidden">
+      <div className="font-inter overflow-hidden">
         <MyContext.Provider
           value={{
             isDesktop,
@@ -43,7 +53,11 @@ const App = () => {
           <Mastery />
           <Clients />
           <Problems />
+          <Faster />
           <Scale />
+          <Plans />
+          <Frequent />
+          <Footer />
         </MyContext.Provider>
       </div>
     </div>

@@ -4,13 +4,13 @@ import { useTranslation } from "react-i18next";
 const ScaleList = (props) => {
   const { t } = useTranslation();
   return props.text == "features" ? (
-    <li className="bg-[#131316] rounded-[1rem]  grid items-center pl-[2.5rem] auto-cols-[1fr] gap-x-[1.5rem] grid-rows-[auto] grid-cols-[2.5fr_1fr_1fr] py-[1.5rem] relative max-stablet:pl-[1.5rem] max-small:gap-x-0 max-small:pl-[1rem]">
-      <h4 className="text-[#a0a0ab] tracking-[0.225rem] text-[1.125rem] font-[500] uppercase leading-[1.2] max-stablet:text-[18px] max-small:text-[16px]">
+    <li className="bg-[#131316] rounded-[1rem] grid items-center pl-[2.5rem] auto-cols-[1fr] gap-x-[1.5rem] grid-rows-[auto] grid-cols-[2.5fr_1fr_1fr] py-[1.5rem] relative max-stablet:pl-[1.5rem] max-small:gap-x-0 max-small:pl-[1rem] max-smal:rounded-none max-smal:pr-[1rem]">
+      <h4 className="text-[#a0a0ab] tracking-[0.225rem] text-[1.125rem] font-[600] uppercase leading-[1.2] max-stablet:text-[18px] max-small:text-[16px]">
         {t(`scale.list.${props.text}`)}
       </h4>
       {["us", "others"].map((text, key) => (
-        <div className="flex items-center justify-center" key={key}>
-          <p className="text-[#e2e2e5] tracking-[-0.03rem] text-[1.5rem] font-[600] leading-[1.2] max-stablet:text-[20px] max-small:text-[17.6px]">
+        <div className="flex items-center justify-center text-center" key={key}>
+          <p className="text-[#e2e2e5] tracking-[-0.03rem] text-[1.5rem] font-[600] leading-[1.2] max-stablet:text-[20px] max-small:text-[17.6px] max-smal:text-[1rem]">
             {t(`scale.${text}`)}
           </p>
         </div>

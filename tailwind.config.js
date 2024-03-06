@@ -8,7 +8,7 @@ export default {
         secondary: "#00ffef",
       },
       fontFamily: {
-        montserratarm: ["Montserratarm", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
     },
     screens: {

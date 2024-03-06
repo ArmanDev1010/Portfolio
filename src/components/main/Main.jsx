@@ -21,7 +21,7 @@ const Main = () => {
   }, [control, inView]);
   //
   return (
-    <div className="bg-[#999D9E] text-white font-medium h-screen !overflow-hidden relative">
+    <div className="bg-[#999D9E] text-white font-medium h-screen !overflow-hidden relative" id="hero">
       <motion.div
         ref={ref}
         variants={{
@@ -37,7 +37,7 @@ const Main = () => {
         }}
       ></motion.div>
       <div className="p-6 px-8 absolute top-0">
-        <a href="/">
+        <a href="https://www.facebook.com/profile.php?id=100092271615808" target="_blank">
           <TiltCard />
         </a>
       </div>
