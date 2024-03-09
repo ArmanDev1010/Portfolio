@@ -24,7 +24,7 @@ const Clients = () => {
               visible: { opacity: 1, y: 0 },
               hidden: { opacity: 0, y: 100 },
             }}
-            className="clipText text-center text-[80px] tracking-[-0.2rem] font-[600] text-lightb leading-[1.1] max-w-[800px] max-tablet:text-[4rem] max-phone:text-[2.5rem] max-phone:leading-[1.1]"
+            className="carouselh2 clipText text-center text-[80px] tracking-[-0.2rem] font-[600] text-lightb leading-[1.1] max-w-[800px] max-tablet:text-[4rem] max-phone:text-[2.5rem] max-phone:leading-[1.1]"
           >
             {t("clients.title")}
           </motion.h2>

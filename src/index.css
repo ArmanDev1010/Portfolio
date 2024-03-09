@@ -501,7 +501,11 @@ body {
   border-color: #00ffef;
   color: #00ffef;
   background-color: rgba(255, 255, 255, 0);
-  background-image: radial-gradient(circle at 50% 110%, rgba(0, 255, 239, .3), rgba(0, 255, 239, 0));
+  background-image: radial-gradient(
+    circle at 50% 110%,
+    rgba(0, 255, 239, 0.3),
+    rgba(0, 255, 239, 0)
+  );
 }
 
 .price_tab-link_a:hover {
@@ -512,7 +516,11 @@ body {
   border-color: #00ffef;
   color: #00ffef;
   background-color: rgba(255, 255, 255, 0);
-  background-image: radial-gradient(circle at 50% 110%, rgba(0, 255, 239, .3), rgba(0, 255, 239, 0));
+  background-image: radial-gradient(
+    circle at 50% 110%,
+    rgba(0, 255, 239, 0.3),
+    rgba(0, 255, 239, 0)
+  );
 }
 
 .price_tab-link_b:hover {
@@ -577,5 +585,10 @@ body {
   }
   .scale_img-wrapper img {
     height: 150% !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .carouselh2 {
+    font-size: max(10vw, 6.5vw) !important;
   }
 }

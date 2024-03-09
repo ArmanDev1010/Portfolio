@@ -65,7 +65,7 @@ const Mastery = () => {
                   visible: { opacity: 1, x: 0 },
                   hidden: { opacity: 0, x: -100 },
                 }}
-                className="clipText text-[80px] tracking-[-0.2rem] font-[600] text-lightb leading-[1.1] max-w-[800px] max-tablet:text-[3rem] max-small:text-[2.5rem]"
+                className="carouselh2 clipText text-[75px] tracking-[-0.2rem] font-[600] text-lightb leading-[1.1] max-w-[800px] max-tablet:text-[3rem] max-small:text-[2.5rem]"
               >
                 {t("mastery.mastery")}
               </motion.h2>
