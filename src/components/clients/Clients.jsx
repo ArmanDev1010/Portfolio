@@ -59,7 +59,7 @@ const Clients = () => {
                   alt="KY Academy"
                   className="w-[250px] mb-12 max-medium:mb-6 max-medium:w-[230px] max-btablet:w-[200px]"
                 />
-                <p className="text-white tracking-[-.04rem] text-[2rem] font-[400] leading-[1.2] max-sdesktop:text-3xl max-medium:text-[22px] max-medium:leading-auto max-btablet:text-xl max-small:text-lg">
+                <p className="text-white tracking-[-.04rem] text-[1.7rem] font-[400] leading-[1.2] max-sdesktop:text-2xl max-medium:text-[17px] max-medium:leading-auto max-btablet:text-xl max-small:text-lg">
                   "{t("clients.review")}"
                 </p>
               </div>

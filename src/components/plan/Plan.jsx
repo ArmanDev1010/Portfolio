@@ -5,39 +5,9 @@ const Plan = (props) => {
   const { t } = useTranslation();
 
   const benefits =
-    props.plan == "startup"
-      ? [
-          "Անսահմանափակ design/development պահանջներ",
-          "1 հարցում միեւնույն ժամանակ",
-          "Սովորական առաջնահերթություն",
-          "2 լեզուներ (ձեր ընտրությամբ)",
-          "Դադարեցնել կամ չեղարկել ցանկացած պահի",
-        ]
-      : props.plan == "enterprise"
-      ? [
-          "Անսահմանափակ design/development պահանջներ",
-          "3 հարցում միեւնույն ժամանակ",
-          "Արագ սպասարկում",
-          "3 լեզուներ (ձեր ընտրությամբ)",
-          "Դադարեցնել կամ չեղարկել ցանկացած պահի",
-        ]
-      : props.plan == "onestartup"
-      ? [
-          "Design + Development",
-          "3 անվճար պահանջներ",
-          "Վաճառքի պատճեն",
-          "CRO նախագիծ",
-          "2 լեզուներ (ձեր ընտրությամբ)",
-        ]
-      : props.plan == "oneenterprise"
-      ? [
-          "Design + Development",
-          "6 անվճար պահանջներ",
-          "Վաճառքի պատճեն",
-          "CRO նախագիծ",
-          "3 լեզուներ (ձեր ընտրությամբ)",
-        ]
-      : null;
+    props.plan == "startup" || props.plan == "enterprise"
+      ? ["1", "2", "3", "4", "5", "6"]
+      : ["1", "2", "3", "4", "5"];
 
   return (
     <div
@@ -104,7 +74,7 @@ const Plan = (props) => {
                 </g>
               </svg>
               <p className="text-[#a0a0ab] tracking-[-0.02rem] font-[500] leading-[1.2]">
-                {text}
+                {t(`plan.${props.plan}.benefits.${text}`)}
               </p>
             </li>
           ))}

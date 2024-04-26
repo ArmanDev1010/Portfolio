@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-import { translationAM } from "./languages";
+import { translationEN } from "./languages";
 
 import {
   Main,
@@ -20,15 +20,15 @@ import {
 import { MyContext } from "./context/MyContext";
 
 const resources = {
-  am: {
-    translation: translationAM,
+  en: {
+    translation: translationEN,
   },
 };
 
 i18n.use(initReactI18next).init({
   resources,
   lng: localStorage.getItem("language"),
-  fallbackLng: "am",
+  fallbackLng: "en",
   interpolation: {
     escapeValue: false,
   },

@@ -1,0 +1,121 @@
+{
+  "mastery": {
+    "increasing": "INCREASING ROAS",
+    "mastery": "A Carousel of Conversions Mastery",
+    "purpose": {
+      "design": "Stunning design",
+      "conversion": "Captivating copy",
+      "copy": "Conversion-optimized layout"
+    }
+  },
+  "clients": {
+    "title": "See us through our clients’ eyes",
+    "review": "When the time came to revamp our school's website, Arman eagerly stepped up to the challenge. With his keen eye for design and meticulous attention to detail, he crafted a sleek, user-friendly website that perfectly encapsulates the essence of KY ACADEMY. From dynamic visuals to seamless navigation, every aspect of the website reflects Arman's dedication to excellence",
+    "person": "Lilit Vatoyan",
+    "role": "Founder - KY Academy"
+  },
+  "problems": {
+    "problem": "THE PROBLEM",
+    "missing": "You’re missing out on a great first impression",
+    "website": {
+      "one": "Your website is the first thing that your customer sees.",
+      "two": "Ask yourself, are you creating the greatest possible first impression to increase sales?",
+      "three": "If the answer is no, your brand is likely suffering from large opportunity cost."
+    },
+    "killer": "ALL USING KILLER LANDING PAGES"
+  },
+  "scale": {
+    "why": "WHY US",
+    "title": "Everything you need to scale",
+    "paragraph": "Ready to start scaling? Here’s where we stand when compared to other typical",
+    "us": "Us",
+    "others": "Others",
+    "list": {
+      "features": "FEATURES",
+      "eye": "Eye-catching design",
+      "world": "World-Class Sales Copy",
+      "sales": "Sales-Optimized layout",
+      "responsive": "Responsive Development",
+      "lightning": "Lightning fast page speed",
+      "smooth": "Smooth Animations & Visuals",
+      "unlimited": "Unlimited revisions until you’re satisfied",
+      "swift": "Swift Delivery"
+    }
+  },
+  "faster": {
+    "reach": "REACH YOUR POTENTIAL",
+    "scaling": "You could be scaling faster",
+    "opportunity": {
+      "lower": "Lower client acquisition costs",
+      "increase": "Increase overall trust and conversions",
+      "build": "Build a brand that creates a lasting impression"
+    }
+  },
+  "plan": {
+    "plans": "PLANS",
+    "start": "Start working with us",
+    "month": "/month",
+    "call": "Get In Contact",
+    "onetime": "One-Time",
+    "monthly": "Monthly",
+    "startup": {
+      "price": "29,500 AMD",
+      "benefits": {
+        "1": "Unlimited design/development requests",
+        "2": "One request at a time",
+        "3": "Normal priority",
+        "4": "2 Languages (your choice)",
+        "5": "2 months minimum",
+        "6": "Pause or cancel anytime"
+      }
+    },
+    "enterprise": {
+      "price": "39,500 AMD",
+      "benefits": {
+        "1": "Unlimited design/development requests",
+        "2": "Two requests at a time",
+        "3": "Ultra fast delivery",
+        "4": "3 Languages (your choice)",
+        "5": "3 months minimum",
+        "6": "Pause or cancel anytime"
+      }
+    },
+    "onestartup": {
+      "price": "150,000 AMD",
+      "benefits": {
+        "1": "Design + Development",
+        "2": "3 Free Requests",
+        "3": "Sales Copy",
+        "4": "CRO Layout",
+        "5": "2 Languages (your choice)"
+      }
+    },
+    "oneenterprise": {
+      "price": "200,000 AMD",
+      "benefits": {
+        "1": "Design + Development",
+        "2": "6 Free Requests",
+        "3": "Sales Copy",
+        "4": "CRO Layout",
+        "5": "3 Languages (your choice)"
+      }
+    }
+  },
+  "frequent": {
+    "title": "Frequently Asked Questions",
+    "faq": {
+      "limit": {
+        "title": "Is there a limit to how many requests I can assign on the monthly plan?",
+        "paragraph": "No, you can assign as many requests as you want once you are subscribed to one of our monthly plans. Requests will be completed one by one (or two at a time on the Enterprise plan), in the order of priority you desire."
+      },
+      "fast": {
+        "title": "How fast will I receive my landing page or request?",
+        "paragraph": "Speed helps our clients achieve more. With that in mind, we always deliver as fast as possible retaining the highest quality possible. It's one of our trademarks."
+      },
+      "work": {
+        "title": "What if I don’t like the work?",
+        "paragraph": "Although no one has ever asked us this - just in case, we offer unlimited revisions until you are fully satisfied with our delivery. Our aim is to deliver the best possible results with as few revisions as possible."
+      }
+    }
+  }
+}

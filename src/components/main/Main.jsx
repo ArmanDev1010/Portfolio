@@ -21,7 +21,10 @@ const Main = () => {
   }, [control, inView]);
   //
   return (
-    <div className="bg-[#999D9E] text-white font-medium h-screen !overflow-hidden relative" id="hero">
+    <div
+      className="bg-[#999D9E] text-white font-medium h-screen !overflow-hidden relative"
+      id="hero"
+    >
       <motion.div
         ref={ref}
         variants={{
@@ -31,13 +34,16 @@ const Main = () => {
         initial="hidden"
         animate={control}
         transition={{ ease: "easeIn", y: { duration: 0.6 } }}
-        className="w-full h-full bg-no-repeat bg-cover bg-center"
+        className="w-full h-full bg-no-repeat bg-contain bg-center max-desktop:bg-cover"
         style={{
-          backgroundImage: `url(${ArmanMain})`,
+          backgroundImage: `url(/src/assets/david.png)`,
         }}
       ></motion.div>
       <div className="p-6 px-8 absolute top-0">
-        <a href="https://www.facebook.com/profile.php?id=100092271615808" target="_blank">
+        <a
+          href="https://www.facebook.com/profile.php?id=100092271615808"
+          target="_blank"
+        >
           <TiltCard />
         </a>
       </div>
@@ -56,10 +62,8 @@ const Main = () => {
         }}
         className="hanger max-stablet:w-full max-stablet:!h-[121px] max-stablet:absolute max-stablet:top-[76%] max-stablet:-translate-y-[76%] max-stablet:w-fit max-stablet:!right-0"
       >
-        <p className="big:text-2xl text-lg max-stablet:asbolute max-stablet:right-0 max-stablet:pl-0 max-stablet:z-[2] max-stablet:text-right max-stablet:!pr-6 max-small:hidden">
-          <span>Located in</span>
-          <br></br>
-          <span>Armenia</span>
+        <p className="big:text-2xl !leading-[1.4] text-lg max-stablet:asbolute max-stablet:right-0 max-stablet:pl-0 max-stablet:z-[2] max-stablet:text-right max-stablet:!pr-6 max-small:hidden">
+          Located in <br></br> Armenia
         </p>
         <svg
           width="300px"
@@ -99,7 +103,7 @@ const Main = () => {
               </g>
             </g>
           </g>
-        </svg>{" "}
+        </svg>
         <div className="digital-ball big:!right-[1.65em] big:!top-[1.6em] max-stablet:!top-1/2 max-stablet:!transform max-stablet:!-translate-y-1/2 max-stablet:!right-[9.9em] max-small:!right-0">
           <div className="overlay"></div>
           <div className="globe big:!w-[4.5em] big:!h-[4.5em]">

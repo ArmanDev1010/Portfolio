@@ -1,3 +1,3 @@
-import translationAM from "./am/translation.json";
+import translationEN from "./en/translation.json";
 
-export { translationAM };
+export { translationEN };
