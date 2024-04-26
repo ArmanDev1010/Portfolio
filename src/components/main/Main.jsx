@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 
-import ArmanMain from "../../assets/ArmanMain.jpg";
 import TextScroller from "../TextScroller";
 import TiltCard from "../TiltCard";
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+
+import davidmichalanjelo from "../../assets/david.png"
 
 const Main = () => {
   // animation
@@ -36,7 +37,7 @@ const Main = () => {
         transition={{ ease: "easeIn", y: { duration: 0.6 } }}
         className="w-full h-full bg-no-repeat bg-contain bg-center max-desktop:bg-cover"
         style={{
-          backgroundImage: `url(/src/assets/david.png)`,
+          backgroundImage: `url(${davidmichalanjelo})`,
         }}
       ></motion.div>
       <div className="p-6 px-8 absolute top-0">
