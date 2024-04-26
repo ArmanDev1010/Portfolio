@@ -6,7 +6,7 @@ import TiltCard from "../TiltCard";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import davidmichalanjelo from "../../assets/david.png"
+import davidmichalanjelo from "../../assets/davidmichalanjelo.png"
 
 const Main = () => {
   // animation
