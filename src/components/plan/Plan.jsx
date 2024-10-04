@@ -28,7 +28,7 @@ const Plan = (props) => {
               </span>
             )}
           </div>
-          <a href="tel:+37498627272">
+          <a href="https://www.facebook.com/profile.php?id=100092271615808">
             <div
               className="button-n text-[#0d121c] tracking-[-0.02rem] capitalize border-[3px] border-[#6a6b6a] rounded-[50vw] py-[1rem] px-[3rem] font-[700] leading-[1.2] no-underline text-[1.25rem] max-phone:text-[1.1rem] text-center"
               style={{

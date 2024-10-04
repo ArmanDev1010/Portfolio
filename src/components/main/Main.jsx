@@ -6,7 +6,7 @@ import TiltCard from "../TiltCard";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import davidmichalanjelo from "../../assets/davidmichalanjelo.png"
+import michalanjelo from "../../assets/michalanjelo.png"
 
 const Main = () => {
   // animation
@@ -37,7 +37,7 @@ const Main = () => {
         transition={{ ease: "easeIn", y: { duration: 0.6 } }}
         className="w-full h-full bg-no-repeat bg-contain bg-center max-desktop:bg-cover"
         style={{
-          backgroundImage: `url(${davidmichalanjelo})`,
+          backgroundImage: `url(${michalanjelo})`,
         }}
       ></motion.div>
       <div className="p-6 px-8 absolute top-0">
