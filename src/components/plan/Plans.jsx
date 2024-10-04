@@ -60,10 +60,6 @@ const Plans = () => {
                 {t("plan.start")}
               </motion.h2>
             </div>
-            <div className="gap-[0.5rem] border-[2px] border-[#1a1a1e] rounded-[50vw] flex-nowrap justify-center items-center p-[0.5rem] flex self-end max-medium:self-start">
-              <Motbtns plan="monthly" setActive={setActive} active={active} />
-              <Motbtns plan="onetime" setActive={setActive} active={active} />
-            </div>
             <motion.div
               ref={ref}
               variants={{
@@ -92,26 +88,11 @@ const Plans = () => {
           }}
           className="px-[5%] pt-[3.75rem] max-medium:pt-[2rem] max-medium:w-full"
         >
-          <div
-            className={`${
-              active == "onetime"
-                ? "price_opacity"
-                : active == "monthly"
-                ? "price_opacityy"
-                : null
-            } max-w-[1280px] relative pt-0 w-full !mx-auto`}
-          >
-            {active == "onetime" ? (
-              <div className="grid gap-[2.25rem] grid-cols-[1fr_1fr] auto-cols-[1fr] max-medium:grid-rows-[auto_auto] max-medium:grid-cols-[1fr]">
-                <Plan plan="onestartup" />
-                <Plan plan="oneenterprise" />
-              </div>
-            ) : (
-              <div className="grid gap-[2.25rem] grid-cols-[1fr_1fr] auto-cols-[1fr] max-medium:grid-rows-[auto_auto] max-medium:grid-cols-[1fr]">
-                <Plan plan="startup" active={active} />
-                <Plan plan="enterprise" active={active} />
-              </div>
-            )}
+          <div className="max-w-[1280px] relative pt-0 w-full !mx-auto">
+            <div className="grid gap-[2.25rem] grid-cols-[1fr_1fr] auto-cols-[1fr] max-medium:grid-rows-[auto_auto] max-medium:grid-cols-[1fr]">
+              <Plan plan="startup" />
+              <Plan plan="onestartup" />
+            </div>
           </div>
         </motion.div>
       </div>

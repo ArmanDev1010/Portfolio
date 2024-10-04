@@ -64,19 +64,8 @@
         "1": "Unlimited design/development requests",
         "2": "One request at a time",
         "3": "Normal priority",
-        "4": "2 Languages (your choice)",
-        "5": "2 months minimum",
-        "6": "Pause or cancel anytime"
-      }
-    },
-    "enterprise": {
-      "price": "39,500 AMD",
-      "benefits": {
-        "1": "Unlimited design/development requests",
-        "2": "Two requests at a time",
-        "3": "Ultra fast delivery",
         "4": "3 Languages (your choice)",
-        "5": "3 months minimum",
+        "5": "2 months minimum",
         "6": "Pause or cancel anytime"
       }
     },
@@ -85,16 +74,6 @@
       "benefits": {
         "1": "Design + Development",
         "2": "3 Free Requests",
-        "3": "Sales Copy",
-        "4": "CRO Layout",
-        "5": "2 Languages (your choice)"
-      }
-    },
-    "oneenterprise": {
-      "price": "200,000 AMD",
-      "benefits": {
-        "1": "Design + Development",
-        "2": "6 Free Requests",
         "3": "Sales Copy",
         "4": "CRO Layout",
         "5": "3 Languages (your choice)"
