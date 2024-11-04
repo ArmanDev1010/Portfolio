@@ -19,6 +19,8 @@ import {
 
 import { MyContext } from "./context/MyContext";
 
+import CursorFollow from "./components/CursorFollow";
+
 const resources = {
   en: {
     translation: translationEN,
@@ -49,6 +51,7 @@ const App = () => {
             isDesktop,
           }}
         >
+          <CursorFollow />
           <Main />
           <Mastery />
           <Clients />

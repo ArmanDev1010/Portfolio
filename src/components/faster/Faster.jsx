@@ -76,7 +76,7 @@ const Faster = () => {
             </div>
           </div>
         </div>
-        <div className="px-[5%] pt-[4rem] pb-[2rem] max-tablet:pt-[3rem]">
+        <div className="px-[5%] pt-[4rem] pb-[4rem] max-tablet:pt-[3rem]">
           <div className="max-w-[1280px] w-full !mx-auto overflow-visible relative">
             <div className="grid grid-cols-[1fr_1fr_1fr] gap-x-[2rem] max-sdesktop:grid-cols-[1fr] max-sdesktop:gap-y-[2rem] max-small:gap-y-[1.5rem]">
               <Opportunity text="lower" />
@@ -86,7 +86,7 @@ const Faster = () => {
           </div>
         </div>
         <div className="px-[5%] relative overflow-hidden">
-          <div className="scale_img-wrapper !mx-auto">
+          <div className="scale_img-wrapper !mx-auto w-full h-full">
             <img src={faster} alt="" />
           </div>
         </div>

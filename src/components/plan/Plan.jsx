@@ -18,30 +18,44 @@ const Plan = (props) => {
     >
       <div className="grid gap-[2rem] grid-cols-[1fr] auto-cols-[1fr] grid-rows-[auto_auto_auto]">
         <div className="flex gap-[2rem] flex-col flex-wrap items-center justify-center text-center">
-          <div className="tracking-[-0.06rem] text-[2.3rem] font-[600] leading-[1.2]">
-            <span className="opacity-50 text-[2.3rem] font-[100]">≈</span>
-            {t(`plan.${props.plan}.price`)}
-            {props.plan == "onestartup" ||
-            props.plan == "oneenterprise" ? null : (
-              <span className="opacity-60 text-[1.5rem] font-[300]">
-                {t("plan.month")}
-              </span>
-            )}
+          <div className="tracking-[-0.06rem] text-[2.5rem] font-[600] leading-[1.2] max-tablet:text-[2rem]">
+            {t(`plan.${props.plan}.type`)} Plan
           </div>
-          <a href="https://www.facebook.com/profile.php?id=100092271615808" target="_blank">
-            <div
-              className="button-n text-[#0d121c] tracking-[-0.02rem] capitalize border-[3px] border-[#6a6b6a] rounded-[50vw] py-[1rem] px-[3rem] font-[700] leading-[1.2] no-underline text-[1.25rem] max-phone:text-[1.1rem] text-center"
-              style={{
-                background:
-                  "radial-gradient(110.56% 100% at 50% 0%, #FFF 71.77%, #ADD9BF 100%)",
-                transition:
-                  "color .2s cubic-bezier(.77,0,.175,1), box-shadow .2s cubic-bezier(.77,0,.175,1), filter .2s cubic-bezier(.77,0,.175,1), border .2s cubic-bezier(.77,0,.175,1)",
-              }}
+          <div className="flex flex-col items-center gap-2">
+            <a
+              href="mailto:arman.manukyan4.y@gmail.com"
+              target="_blank"
+              className="w-fit"
             >
-              {t("plan.call")}
-            </div>
-            <p className="text-center pt-3 opacity-60">+374 98 62 72 72</p>
-          </a>
+              <div
+                className="group button-n text-[#0d121c] tracking-[-0.02rem] capitalize border-[3px] border-[#6a6b6a] rounded-[50vw] py-[1rem] px-[3rem] font-[700] leading-[1.2] no-underline text-[1.25rem] max-phone:text-[1.1rem] text-center"
+                style={{
+                  background:
+                    "radial-gradient(110.56% 100% at 50% 0%, #FFF 71.77%, #ADD9BF 100%)",
+                  transition:
+                    "color .2s cubic-bezier(.77,0,.175,1), box-shadow .2s cubic-bezier(.77,0,.175,1), filter .2s cubic-bezier(.77,0,.175,1), border .2s cubic-bezier(.77,0,.175,1)",
+                }}
+              >
+                <div className="relative overflow-hidden text-center">
+                  <div className="group-hover:translate-y-[-110%] transition duration-300">
+                    {t("plan.contact")}
+                  </div>
+                  <div className="translate-y-[110%] group-hover:translate-y-[0%] transition duration-300 absolute top-0 bottom-0 left-0 right-0">
+                    {t("plan.contact")}
+                  </div>
+                </div>
+              </div>
+            </a>
+            <ul className="flex gap-x-7 flex-wrap justify-center">
+              {["phone", "mail"].map((text, key) => (
+                <li className="text-center pt-3 opacity-60" key={key}>
+                  <a href={text == "phone" ? "tel:+37498627272" : "mailto:arman.manukyan4.y@gmail.com"} target="_blank">
+                    {t(`plan.${text}`)}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
         <div className="w-full h-[2px] bg-[#1a1a1e]"></div>
         <ul className="grid gap-[0.875rem] grid-rows-[auto_auto] grid-cols-[1fr_1fr] auto-cols-[1fr] max-phone:flex max-phone:flex-col">

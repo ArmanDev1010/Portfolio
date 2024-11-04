@@ -37,7 +37,7 @@ const Plans = () => {
                 }}
                 initial="hidden"
                 animate={control}
-                transition={{ ease: "easeIn", x: { duration: 0.4 } }}
+                transition={{ ease: "easeIn", x: { duration: 0.4 } }}z
                 className="uppercase mb-3 font-[600] tracking-[0.15rem] text-xl italic pl-3 border-l border-l-[4px] border-secondary text-secondary max-tablet:text-base max-tablet:border-l-[3px]"
               >
                 {t("plan.plans")}
@@ -90,8 +90,8 @@ const Plans = () => {
         >
           <div className="max-w-[1280px] relative pt-0 w-full !mx-auto">
             <div className="grid gap-[2.25rem] grid-cols-[1fr_1fr] auto-cols-[1fr] max-medium:grid-rows-[auto_auto] max-medium:grid-cols-[1fr]">
-              <Plan plan="startup" />
-              <Plan plan="onestartup" />
+              <Plan plan="monthly" />
+              <Plan plan="onetime" />
             </div>
           </div>
         </motion.div>

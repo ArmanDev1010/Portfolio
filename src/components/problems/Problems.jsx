@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import { after, before } from "../../assets/index";
+import { after, before } from "../../assets";
 
 const Problems = () => {
   const { t } = useTranslation();

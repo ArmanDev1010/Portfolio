@@ -54,12 +54,11 @@
   "plan": {
     "plans": "PLANS",
     "start": "Start working with us",
-    "month": "/month",
-    "call": "Get In Contact",
-    "onetime": "One-Time",
-    "monthly": "Monthly",
-    "startup": {
-      "price": "29,500 AMD",
+    "contact": "Get In Contact",
+    "phone": "+374 98 62 72 72",
+    "mail": "arman.manukyan4.y@gmail.com",
+    "monthly": {
+      "type": "Monthly",
       "benefits": {
         "1": "Unlimited design/development requests",
         "2": "One request at a time",
@@ -69,8 +68,8 @@
         "6": "Pause or cancel anytime"
       }
     },
-    "onestartup": {
-      "price": "150,000 AMD",
+    "onetime": {
+      "type": "One-Time",
       "benefits": {
         "1": "Design + Development",
         "2": "3 Free Requests",

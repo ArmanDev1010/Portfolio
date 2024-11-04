@@ -45,6 +45,40 @@ body {
   background: #030604;
 }
 
+.main-cursor {
+  position: fixed;
+  pointer-events: none;
+  width: 359px;
+  height: 359px;
+  background-color: #fff;
+  border-radius: 50%;
+  mix-blend-mode: overlay;
+  -webkit-filter: blur(141px);
+  filter: blur(141px);
+  pointer-events: none;
+  transform: translate3d(0, 0, 0);
+  z-index: 1000000000000000000000000;
+  opacity: 0.8;
+  -webkit-transition: opacity 1.2s ease;
+  transition: opacity 1.2s ease;
+}
+
+.contact_grids {
+  border-radius: 30px;
+  display: grid;
+  flex: 1 0 0px;
+  gap: 10px;
+  grid-auto-rows: minmax(0, 1fr);
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+}
+
 .hanger {
   position: absolute;
   left: 0;
@@ -290,7 +324,7 @@ body {
 .conversion_card-content-wrapper {
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
-  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.86) 25%);
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.86) 70%);
 }
 
 .mySwiperCarousel .swiper-slide:hover {
@@ -457,7 +491,6 @@ body {
 
 .scale_img-wrapper {
   max-width: 89.25rem;
-  aspect-ratio: 1428/548;
   justify-content: center;
   align-items: center;
   display: flex;
