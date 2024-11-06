@@ -33,7 +33,7 @@ const TextScroller = ({ text, second }) => {
       className="relative flex items-center"
       style={textStyles}
     >
-      <h1 className="relative flex items-center text-[max(9em,15vw)] whitespace-nowrap pointer-events-none leading-4 max-stablet:text-[max(5em,15vw)]">
+      <h1 className="relative flex items-center text-[max(9em,13vw)] whitespace-nowrap pointer-events-none leading-4 max-stablet:text-[max(5em,17vw)]">
         {text}
         <span className="px-[3vw]">—</span>
       </h1>

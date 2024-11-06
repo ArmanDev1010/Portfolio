@@ -5,27 +5,32 @@
 @font-face {
   font-family: "Inter";
   font-weight: normal;
-  src: url("./fonts/Inter-Regular.ttf") format("ttf");
+  src: url("./fonts/Inter/Inter-Regular.ttf") format("ttf");
 }
 @font-face {
   font-family: "Inter";
   font-weight: bold;
-  src: url("./fonts/Inter-Bold.ttf") format("ttf");
+  src: url("./fonts/Inter/Inter-Bold.ttf") format("ttf");
 }
 @font-face {
   font-family: "Inter";
   font-weight: bolder;
-  src: url("./fonts/Inter-ExtraBold.ttf") format("ttf");
+  src: url("./fonts/Inter/Inter-ExtraBold.ttf") format("ttf");
 }
 @font-face {
   font-family: "Inter";
   font-weight: semibold;
-  src: url("./fonts/Inter-SemiBold.ttf") format("ttf");
+  src: url("./fonts/Inter/Inter-SemiBold.ttf") format("ttf");
 }
 @font-face {
   font-family: "Inter";
   font-weight: lighter;
-  src: url("./fonts/Inter-Thin.ttf") format("otf");
+  src: url("./fonts/Inter/Inter-Thin.ttf") format("otf");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-weight: lighter;
+  src: url("./fonts/helvetica/Helvetica-Bold.ttf") format("truetype");
 }
 
 :root {

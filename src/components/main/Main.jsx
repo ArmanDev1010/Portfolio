@@ -192,10 +192,10 @@ const Main = () => {
           y: { duration: 0.6, delay: 1 },
           opacity: { delay: 1 },
         }}
-        className="absolute bottom-[15vh] left-0 flex w-full pb-[calc(clamp(1.5em,4vw,2.5em)*1.25)] max-bmedium:pb-0 max-stablet:bottom-0 max-stablet:top-[20%] max-stablet:transform max-stablet:-translate-y-[20%]"
+        className="!font-helvetica font-[600] tracking-[-10px] max-stablet:tracking-[-5px] absolute bottom-[12vh] left-0 flex w-full pb-[calc(clamp(1.5em,4vw,2.5em)*1.25)] max-bmedium:pb-0 max-stablet:bottom-0 max-stablet:top-[20%] max-stablet:transform max-stablet:-translate-y-[20%]"
       >
-        <TextScroller text="Արման Մանուկյան" />
-        <TextScroller text="Արման Մանուկյան" />
+        <TextScroller text="ARMAN MANUKYAN" />
+        <TextScroller text="ARMAN MANUKYAN" />
       </motion.div>
     </div>
   );

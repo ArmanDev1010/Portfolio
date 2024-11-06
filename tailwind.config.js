@@ -9,6 +9,7 @@ export default {
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        helvetica: ["Helvetica", "sans-serif"],
       },
     },
     screens: {
